@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SEENI.OS by CINI Systems - Product Developer. Codester marketplace seller.">
+  <meta name="keywords" content="SEENI.OS, CINI Systems, Product Developer, Codester, Flutter, React, SaaS">
+  <meta name="author" content="Seeni Vasan">
+  <title>SEENI.OS | Product Developer</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+  <div class="app">
+    <header class="navbar">
+      <a href="#hero" class="brand">SEENI.OS</a>
+      <button type="button" class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#capabilities" class="nav-link">Capabilities</a>
+        <a href="#highlights" class="nav-link">Highlights</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button type="button" class="theme-settings-btn" id="theme-settings-btn" aria-label="Theme settings" title="Theme">
+        <span class="theme-settings-icon" aria-hidden="true">&#9881;</span>
+      </button>
+    </header>
+
+    <aside id="theme-side-panel" class="theme-side-panel" aria-hidden="true">
+      <div class="theme-side-panel-inner">
+        <h2 class="theme-side-panel-title">Theme</h2>
+        <p class="theme-side-panel-desc">Choose accent color.</p>
+        <div class="theme-presets">
+          <button type="button" class="theme-preset" data-theme="blue" data-color="#3b82f6" aria-label="Blue" title="Blue"><span class="theme-preset-dot"></span><span class="theme-preset-label">Blue</span></button>
+          <button type="button" class="theme-preset" data-theme="purple" data-color="#8b5cf6" aria-label="Purple" title="Purple"><span class="theme-preset-dot"></span><span class="theme-preset-label">Purple</span></button>
+          <button type="button" class="theme-preset" data-theme="green" data-color="#10b981" aria-label="Green" title="Green"><span class="theme-preset-dot"></span><span class="theme-preset-label">Green</span></button>
+          <button type="button" class="theme-preset" data-theme="orange" data-color="#f59e0b" aria-label="Orange" title="Orange"><span class="theme-preset-dot"></span><span class="theme-preset-label">Orange</span></button>
+          <button type="button" class="theme-preset" data-theme="red" data-color="#ef4444" aria-label="Red" title="Red"><span class="theme-preset-dot"></span><span class="theme-preset-label">Red</span></button>
+          <button type="button" class="theme-preset" data-theme="cyan" data-color="#06b6d4" aria-label="Cyan" title="Cyan"><span class="theme-preset-dot"></span><span class="theme-preset-label">Cyan</span></button>
+          <button type="button" class="theme-preset" data-theme="dark" data-color="#6366f1" aria-label="Dark" title="Dark"><span class="theme-preset-dot"></span><span class="theme-preset-label">Dark</span></button>
+        </div>
+      </div>
+    </aside>
+
+    <div id="theme-toast" class="theme-toast" aria-live="polite" role="status"></div>
+
+    <aside class="sidebar">
+      <ul class="sidebar-list">
+        <li><a href="#hero" class="sidebar-link">Home</a></li>
+        <li><a href="#projects" class="sidebar-link">Projects</a></li>
+        <li><a href="#capabilities" class="sidebar-link">Capabilities</a></li>
+        <li><a href="#highlights" class="sidebar-link">Highlights</a></li>
+        <li><a href="#contact" class="sidebar-link">Contact</a></li>
+        <li><a href="tel:+917200784144" class="sidebar-link">Phone</a></li>
+        <li><a href="mailto:seenivasan813@gmail.com" class="sidebar-link">Email</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <section id="hero" class="panel section-hero">
+        <div class="hero">
+          <div class="hero-profile">
+            <img id="profileAvatar" class="profile-avatar" src="assets/profile.jpg/WhatsApp%20Image%202026-02-08%20at%202.03.00%20PM.jpeg" alt="Seeni Vasan" />
+          </div>
+          <div class="hero-info">
+            <h1 class="hero-name">Seeni Vasan</h1>
+            <p class="hero-brand">SEENI.OS by CINI Systems</p>
+            <p class="hero-role">Product Developer | Offline Systems Specialist</p>
+            <p class="hero-tagline">Offline-First | AI-Assisted Systems</p>
+            <a href="https://www.codester.com/seenivasan/" class="btn-hero-cta" data-codester="true" target="_blank" rel="noopener noreferrer">View My Codester Store</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="panel section-projects">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Production systems available on Codester.</p>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card-body">
+              <div class="product-card-header">
+                <h4 class="product-card-title">Invoice Pro</h4>
+                <span class="badge badge-app">App</span>
+              </div>
+              <p class="product-card-role">Architecture + Development</p>
+              <p class="product-card-stack">Flutter</p>
+              <p class="product-card-usecase">Offline invoice and PDF export.</p>
+              <div class="product-card-actions">
+                <a href="https://www.codester.com/seenivasan/" class="btn-codester" data-codester="true" target="_blank" rel="noopener noreferrer">View on Codester</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card-body">
+              <div class="product-card-header">
+                <h4 class="product-card-title">Staff Attendance Pro</h4>
+                <span class="badge badge-app">App</span>
+              </div>
+              <p class="product-card-role">Architecture + Development</p>
+              <p class="product-card-stack">Flutter / Android</p>
+              <p class="product-card-usecase">Staff check-in and attendance.</p>
+              <div class="product-card-actions">
+                <a href="https://www.codester.com/seenivasan/" class="btn-codester" data-codester="true" target="_blank" rel="noopener noreferrer">View on Codester</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card-body">
+              <div class="product-card-header">
+                <h4 class="product-card-title">Inventory Manager</h4>
+                <span class="badge badge-app">App</span>
+              </div>
+              <p class="product-card-role">Architecture + Development</p>
+              <p class="product-card-stack">Flutter, SQLite</p>
+              <p class="product-card-usecase">Offline stock management.</p>
+              <div class="product-card-actions">
+                <a href="https://www.codester.com/seenivasan/" class="btn-codester" data-codester="true" target="_blank" rel="noopener noreferrer">View on Codester</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card-body">
+              <div class="product-card-header">
+                <h4 class="product-card-title">PDF Engine Kit</h4>
+                <span class="badge badge-app">App</span>
+              </div>
+              <p class="product-card-role">Architecture + Development</p>
+              <p class="product-card-stack">Flutter</p>
+              <p class="product-card-usecase">Offline PDF generation.</p>
+              <div class="product-card-actions">
+                <a href="https://www.codester.com/seenivasan/" class="btn-codester" data-codester="true" target="_blank" rel="noopener noreferrer">View on Codester</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-cta-wrap">
+          <a href="https://www.codester.com/seenivasan/" class="btn-projects-cta" data-codester="true" target="_blank" rel="noopener noreferrer">Explore All Products on Codester</a>
+        </div>
+      </section>
+
+      <section id="capabilities" class="panel section-capabilities">
+        <h2 class="section-title">Capabilities</h2>
+        <p class="capabilities-intro">Mobile apps, web platforms, admin dashboards, SaaS. Offline-first. Published on Codester.</p>
+        <div class="capabilities-grid">
+          <div class="capability-item">Web App Development</div>
+          <div class="capability-item">Flutter Mobile Apps</div>
+          <div class="capability-item">Admin Dashboards</div>
+          <div class="capability-item">Automation Tools</div>
+          <div class="capability-item">Offline Systems</div>
+          <div class="capability-item">SaaS MVP</div>
+        </div>
+      </section>
+
+      <section id="highlights" class="panel section-highlights">
+        <h2 class="section-title">Highlights</h2>
+        <ul class="highlights-list">
+          <li>Projects Delivered</li>
+          <li>SaaS &amp; Mobile Applications</li>
+          <li>Offline-First Systems</li>
+          <li>POS &amp; Billing Solutions</li>
+          <li>Automation Tools</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="panel section-contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-layout">
+          <div class="contact-actions">
+            <a href="https://wa.me/917200784144?text=Hi%20I%20need%20a%20project" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+            <p class="contact-reply">Reply within 24 hours</p>
+          </div>
+          <div class="contact-form-wrap">
+            <form name="contact" method="POST" data-netlify="true" class="contact-form">
+              <input type="hidden" name="form-name" value="contact">
+              <div class="form-group">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="name" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" required autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="4" required autocomplete="off"></textarea>
+              </div>
+              <button type="submit" class="btn-submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p class="footer-text">&copy; 2026 Seeni Vasan | SEENI.OS by CINI Systems</p>
+        <p class="footer-codester">
+          <a href="https://www.codester.com/seenivasan/" class="footer-codester-link" data-codester="true" target="_blank" rel="noopener noreferrer">Official Codester Profile</a>
+        </p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
