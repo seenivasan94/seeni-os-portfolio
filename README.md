@@ -1,4 +1,7 @@
 # SEENI.OS by CINI Systems
+**Live Portfolio:**
+
+ https://sseenivasan-portfolio.netlify.app
 
 Offline-first personal portfolio. Pure HTML, CSS, and vanilla JavaScript. No backend, no frameworks. Netlify-ready. Brand-preview theme system and Codester profile integration.
 
