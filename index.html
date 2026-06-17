@@ -21,6 +21,7 @@
       </button>
       <nav class="nav-links">
         <a href="#hero" class="nav-link active">Home</a>
+        <a href="#platforms" class="nav-link">Platforms</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#capabilities" class="nav-link">Capabilities</a>
         <a href="#highlights" class="nav-link">Highlights</a>
@@ -52,6 +53,7 @@
     <aside class="sidebar">
       <ul class="sidebar-list">
         <li><a href="#hero" class="sidebar-link">Home</a></li>
+        <li><a href="#platforms" class="sidebar-link">Platforms</a></li>
         <li><a href="#projects" class="sidebar-link">Projects</a></li>
         <li><a href="#capabilities" class="sidebar-link">Capabilities</a></li>
         <li><a href="#highlights" class="sidebar-link">Highlights</a></li>
@@ -72,8 +74,50 @@
             <p class="hero-brand">SEENI.OS by CINI Systems</p>
             <p class="hero-role">Product Developer | Offline Systems Specialist</p>
             <p class="hero-tagline">Offline-First | AI-Assisted Systems</p>
-            <a href="https://www.codester.com/seenivasan/" class="btn-hero-cta" data-codester="true" target="_blank" rel="noopener noreferrer">View My Codester Store</a>
+            <div class="hero-actions" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="https://www.codester.com/seenivasan/" class="btn-hero-cta" data-codester="true" target="_blank" rel="noopener noreferrer">View My Codester Store</a>
+              <a href="assets/resume.pdf" class="btn-hero-cta" style="background: transparent; border-color: var(--accent-color); color: var(--accent-color);" download>Download Resume</a>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section id="platforms" class="panel section-platforms">
+        <h2 class="section-title">SaaS Platforms</h2>
+        <p class="section-subtitle">Live web platforms built for specific domains.</p>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="assets/projects/draftmydocu.png" alt="DraftMyDocu" class="product-card-image">
+            <div class="product-card-body">
+              <div class="product-card-header">
+                <h4 class="product-card-title">DraftMyDocu</h4>
+                <span class="badge badge-platform" style="background: rgba(16, 185, 129, 0.2); color: #10b981;">Platform</span>
+              </div>
+              <p class="product-card-role">Founder &amp; Developer</p>
+              <p class="product-card-stack">Next.js, Tailwind, Node.js</p>
+              <p class="product-card-usecase">Create legal documents in minutes. Self-help templates for business, rental, and personal use with automated PDF generation.</p>
+              <div class="product-card-actions">
+                <a href="https://www.draftmydocu.com" class="btn-projects-cta" target="_blank" rel="noopener noreferrer" style="margin: 0; padding: 0.5rem 1rem; font-size: 0.85rem;">Visit Site</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="assets/projects/getbizora.png" alt="GetBizora" class="product-card-image">
+            <div class="product-card-body">
+              <div class="product-card-header">
+                <h4 class="product-card-title">GetBizora</h4>
+                <span class="badge badge-platform" style="background: rgba(16, 185, 129, 0.2); color: #10b981;">Platform</span>
+              </div>
+              <p class="product-card-role">Founder &amp; Developer</p>
+              <p class="product-card-stack">React, Cloud Firestore, Node.js</p>
+              <p class="product-card-usecase">Professional invoicing and powerful reports. Manage clients and track payments in one secure workspace.</p>
+              <div class="product-card-actions">
+                <a href="https://www.getbizora.com" class="btn-projects-cta" target="_blank" rel="noopener noreferrer" style="margin: 0; padding: 0.5rem 1rem; font-size: 0.85rem;">Visit Site</a>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
