@@ -1,0 +1,7 @@
+.theme-preset[data-theme="blue"] .theme-preset-dot { background: #3b82f6; }
+.theme-preset[data-theme="purple"] .theme-preset-dot { background: #8b5cf6; }
+.theme-preset[data-theme="green"] .theme-preset-dot { background: #10b981; }
+.theme-preset[data-theme="orange"] .theme-preset-dot { background: #f59e0b; }
+.theme-preset[data-theme="red"] .theme-preset-dot { background: #ef4444; }
+.theme-preset[data-theme="cyan"] .theme-preset-dot { background: #06b6d4; }
+.theme-preset[data-theme="dark"] .theme-preset-dot { background: #6366f1; }
