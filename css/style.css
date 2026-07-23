@@ -683,6 +683,149 @@ p { font-size: 1.25rem; color: var(--text-sec); }
     color: #b45309;
 }
 
+/* SJ Clothing UI */
+.real-glow-sj {
+    background: radial-gradient(circle, rgba(30, 58, 138, 0.35) 0%, transparent 72%);
+}
+
+.real-app--sj {
+    background: #f4f7fb;
+    color: #0f172a;
+}
+
+.sj-dashboard {
+    grid-template-columns: 10.5em 1fr;
+}
+
+.sj-sidebar {
+    background: #1e293b;
+    border-right: none;
+}
+
+.sj-sidebar .real-logo.sj {
+    color: #fff;
+    font-size: 1.55em;
+}
+
+.sj-system-label {
+    font-size: 1em;
+    color: #94a3b8;
+    margin: -0.2em 0 1em 0.8em;
+}
+
+.sj-sidebar .real-side-item {
+    color: #cbd5e1;
+    font-size: 1.05em;
+}
+
+.sj-sidebar .real-side-item.active {
+    background: #2563eb;
+    color: #fff;
+}
+
+.sj-main {
+    background: #f8fafc;
+}
+
+.sj-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.sj-session {
+    font-size: 1.05em;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.sj-company-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.9em;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 0.4em 1.2em rgba(15, 23, 42, 0.05);
+}
+
+.sj-company-logo {
+    width: 2.4em;
+    height: 2.4em;
+    margin: 0 auto 0.5em;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #fde68a, #f59e0b);
+    color: #78350f;
+    font-size: 1em;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sj-company-name {
+    font-size: 1.45em;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.sj-company-meta {
+    font-size: 1.05em;
+    color: #64748b;
+    margin-top: 0.25em;
+}
+
+.sj-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.55em;
+}
+
+.sj-stat {
+    border-radius: 0.75em;
+    padding: 0.65em 0.55em;
+    text-align: center;
+    border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.sj-stat span {
+    display: block;
+    font-size: 0.95em;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 0.25em;
+}
+
+.sj-stat strong {
+    display: block;
+    font-size: 1.35em;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.sj-stat-green { background: #ecfdf5; }
+.sj-stat-orange { background: #fff7ed; }
+.sj-stat-teal { background: #ecfeff; }
+.sj-stat-purple { background: #faf5ff; }
+.sj-stat-pink { background: #fdf2f8; }
+
+.sj-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.55em;
+}
+
+.sj-action {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75em;
+    padding: 0.7em;
+    font-size: 1.05em;
+    font-weight: 700;
+    color: #334155;
+    text-align: center;
+}
+
 .collage-card:hover .real-browser,
 .collage-card.is-active .real-browser {
     box-shadow: 0 2.5em 5em rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.3);

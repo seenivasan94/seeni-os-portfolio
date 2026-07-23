@@ -139,6 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 let suffix = '';
                 if (target === 21) suffix = '+';
+                else if (target === 3) suffix = '+';
                 else if (target === 2) suffix = '+';
                 else if (target === 11) suffix = ' Years';
 
