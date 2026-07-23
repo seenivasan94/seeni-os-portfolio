@@ -219,34 +219,243 @@ p { font-size: 1.25rem; color: var(--text-sec); }
                 z-index 0s;
 }
 
-.collage-card img {
+/* Premium Product Mockups */
+.premium-mockup {
+    position: relative;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.mockup-glow {
+    position: absolute;
+    inset: 10% 5%;
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.55;
     pointer-events: none;
 }
 
-/* Product Fallback Styles */
-.product-fallback-1::after {
-    content: "DraftMyDocu Platform";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 700;
-    color: var(--primary);
-    font-size: 1.2rem;
+.mockup-glow-legal {
+    background: radial-gradient(circle, rgba(0, 113, 227, 0.7) 0%, transparent 70%);
 }
 
-.product-fallback-2::after {
-    content: "GetBizora Platform";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.mockup-glow-biz {
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.65) 0%, transparent 70%);
+}
+
+.mockup-window {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.mockup-legal .mockup-window {
+    background: linear-gradient(145deg, #07111f 0%, #0f2744 45%, #123a6b 100%);
+}
+
+.mockup-biz .mockup-window {
+    background: linear-gradient(145deg, #061510 0%, #0c2e24 45%, #0f4a3a 100%);
+}
+
+.mockup-titlebar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0.65rem 0.85rem;
+    background: rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mockup-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.mockup-dot:first-child { background: #ff5f57; }
+.mockup-dot:nth-child(2) { background: #febc2e; }
+.mockup-dot:nth-child(3) { background: #28c840; }
+
+.mockup-title {
+    margin-left: auto;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.75);
+    text-transform: uppercase;
+}
+
+.mockup-layout {
+    display: grid;
+    grid-template-columns: 22% 1fr;
+    gap: 0.65rem;
+    padding: 0.75rem;
+    flex: 1;
+    min-height: 0;
+}
+
+.mockup-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.mockup-nav {
+    height: 8px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.mockup-nav.active {
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 12px rgba(0, 113, 227, 0.5);
+}
+
+.mockup-biz .mockup-nav.active {
+    box-shadow: 0 0 12px rgba(16, 185, 129, 0.5);
+}
+
+.mockup-panel {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.mockup-doc-badge {
+    align-self: flex-start;
+    font-size: 0.55rem;
     font-weight: 700;
-    color: var(--primary);
-    font-size: 1.2rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 113, 227, 0.35);
+    border: 1px solid rgba(0, 113, 227, 0.45);
+    padding: 0.25rem 0.5rem;
+    border-radius: 100px;
+}
+
+.mockup-line {
+    display: block;
+    height: 6px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.mockup-line.w100 { width: 100%; }
+.mockup-line.w94 { width: 94%; }
+.mockup-line.w88 { width: 88%; }
+.mockup-line.w80 { width: 80%; }
+.mockup-line.w72 { width: 72%; }
+
+.mockup-sign-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    gap: 0.5rem;
+}
+
+.mockup-sign {
+    width: 38%;
+    height: 22px;
+    border-radius: 6px;
+    border: 1px dashed rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.mockup-pill {
+    width: 28%;
+    height: 10px;
+    border-radius: 100px;
+    background: linear-gradient(90deg, #0071e3, #4da3ff);
+}
+
+.mockup-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.45rem;
+    padding: 0.65rem 0.75rem 0;
+}
+
+.mockup-stat {
+    height: 28px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.mockup-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.35rem;
+    padding: 0.65rem 0.75rem;
+    flex: 1;
+    min-height: 0;
+}
+
+.mockup-bar {
+    flex: 1;
+    border-radius: 6px 6px 2px 2px;
+    background: linear-gradient(180deg, rgba(52, 211, 153, 0.95), rgba(16, 185, 129, 0.35));
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.25);
+}
+
+.mockup-bar.h45 { height: 45%; }
+.mockup-bar.h55 { height: 55%; }
+.mockup-bar.h60 { height: 60%; }
+.mockup-bar.h72 { height: 72%; }
+.mockup-bar.h85 { height: 85%; }
+.mockup-bar.h92 { height: 92%; }
+
+.mockup-invoice {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0 0.75rem 0.75rem;
+}
+
+.mockup-row {
+    height: 8px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.mockup-row.short { width: 62%; }
+
+.mockup-showcase .mockup-title {
+    font-size: 0.75rem;
+}
+
+.mockup-showcase .mockup-doc-badge {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.75rem;
+}
+
+.mockup-showcase .mockup-line { height: 8px; }
+.mockup-showcase .mockup-stat { height: 42px; }
+.mockup-showcase .mockup-sign { height: 32px; }
+
+.collage-card:hover .premium-mockup .mockup-window,
+.collage-card.is-active .premium-mockup .mockup-window {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 20px 50px rgba(0, 0, 0, 0.35);
 }
 
 @media (max-width: 1024px) {
@@ -339,9 +548,29 @@ p { font-size: 1.25rem; color: var(--text-sec); }
 
 .showcase-item:hover { transform: translateY(-10px); box-shadow: var(--shadow); }
 
-.showcase-img { height: 500px; background: #f0f0f2; overflow: hidden; position: relative; }
-.showcase-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s ease; }
-.showcase-item:hover .showcase-img img { transform: scale(1.05); }
+.showcase-img {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(160deg, var(--accent) 0%, var(--bg) 100%);
+}
+
+.showcase-item:hover .premium-mockup .mockup-window {
+    transform: scale(1.02);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+.premium-mockup.mockup-showcase {
+    max-width: 520px;
+}
+
+.premium-mockup .mockup-window {
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
 
 .showcase-content { padding: 4rem; display: flex; flex-direction: column; justify-content: center; }
 
