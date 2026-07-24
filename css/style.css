@@ -276,6 +276,129 @@ p { font-size: 1.25rem; color: var(--text-sec); }
                 z-index 0s;
 }
 
+/* HD Product Screenshots */
+.pro-shot {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0.35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase-img .pro-shot {
+    padding: 0;
+}
+
+.pro-shot-glow {
+    position: absolute;
+    inset: 6% 4%;
+    border-radius: 50%;
+    filter: blur(42px);
+    opacity: 0.38;
+    pointer-events: none;
+}
+
+.pro-shot-glow-draft {
+    background: radial-gradient(circle, rgba(0, 113, 227, 0.45) 0%, transparent 72%);
+}
+
+.pro-shot-glow-biz {
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.45) 0%, transparent 72%);
+}
+
+.pro-shot-glow-sj {
+    background: radial-gradient(circle, rgba(30, 58, 138, 0.42) 0%, transparent 72%);
+}
+
+.pro-shot-browser {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #ececef;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.pro-shot-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: linear-gradient(180deg, #f7f7f8 0%, #ececef 100%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    flex-shrink: 0;
+}
+
+.pro-shot-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.pro-shot-dots i {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: block;
+    font-style: normal;
+}
+
+.pro-shot-dots i:nth-child(1) { background: #ff5f57; }
+.pro-shot-dots i:nth-child(2) { background: #febc2e; }
+.pro-shot-dots i:nth-child(3) { background: #28c840; }
+
+.pro-shot-url {
+    flex: 1;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: #52525b;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 999px;
+    padding: 6px 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pro-shot-screen {
+    flex: 1;
+    min-height: 0;
+    background: #fff;
+}
+
+.pro-shot-screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+.pro-shot--showcase {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.collage-card:hover .pro-shot-browser,
+.collage-card.is-active .pro-shot-browser {
+    transform: translateY(-4px);
+    box-shadow: 0 32px 70px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+}
+
+.showcase-item:hover .pro-shot-browser {
+    transform: scale(1.02);
+    box-shadow: 0 32px 70px rgba(0, 0, 0, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+}
+
 /* Real UI Product Mockups */
 .real-mockup {
     position: relative;
