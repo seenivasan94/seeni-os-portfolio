@@ -117,7 +117,7 @@ Tirupur, Tamil Nadu, India
 
 - Email: [seenivasan813@gmail.com](mailto:seenivasan813@gmail.com)
 - Portfolio: [https://sseenivasan-portfolio.netlify.app](https://sseenivasan-portfolio.netlify.app)
-- LinkedIn: [linkedin.com/in/seenivasan](https://linkedin.com/in/seenivasan)
+- LinkedIn: [linkedin.com/in/seeni-vasan-29076339b/](https://www.linkedin.com/in/seeni-vasan-29076339b/)
 - Codester: [codester.com/seenivasan](https://www.codester.com/seenivasan)
 
 ---
