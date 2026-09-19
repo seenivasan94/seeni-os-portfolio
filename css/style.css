@@ -1338,11 +1338,24 @@ body:not(.dark-mode) .stats-glass .stat-card {
 
 .exp-list { display: flex; flex-direction: column; gap: 4rem; }
 .exp-item { display: grid; grid-template-columns: 120px 1fr; gap: 2rem; }
-.exp-year { font-weight: 700; color: var(--text-sec); }
-.exp-info h3 { margin-bottom: 1.5rem; }
+.exp-year { font-weight: 700; color: #6e6e73; }
+.exp-info h3 { margin-bottom: 1.5rem; color: var(--text); }
 .exp-tasks { list-style: none; }
-.exp-tasks li { position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: var(--text-sec); }
+.exp-tasks li { position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: #424245; }
 .exp-tasks li::before { content: "•"; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
+
+.experience-founder .exp-header p {
+    color: #6e6e73;
+}
+
+.dark-mode .exp-year,
+.dark-mode .experience-founder .exp-header p {
+    color: #a1a1a6;
+}
+
+.dark-mode .exp-tasks li {
+    color: #d2d2d7;
+}
 
 /* Skills */
 .skills-premium { padding: 120px 0; }
