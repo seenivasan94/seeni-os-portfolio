@@ -79,7 +79,7 @@
     <div class="wrap">
         <div class="toolbar">
             <a href="../index.html">← Back to Portfolio</a>
-            <button type="button" onclick="window.print()">Print / Save as PDF</button>
+            <button type="button" id="download-pdf">Download PDF</button>
         </div>
         <main class="page">
             <header>
@@ -185,5 +185,17 @@
             </section>
         </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        document.getElementById('download-pdf').addEventListener('click', function () {
+            html2pdf().set({
+                margin: [12, 12, 12, 12],
+                filename: 'Seenivasan-Shanmugam-Resume.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            }).from(document.querySelector('.page')).save();
+        });
+    </script>
 </body>
 </html>
